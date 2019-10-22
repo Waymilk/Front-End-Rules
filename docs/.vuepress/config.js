@@ -27,6 +27,9 @@ module.exports = {
                 ]
             }
         ],
+        markdown: { // 为每个代码块显示行号
+            lineNumbers: false
+        },
         sidebar: [{
             title: "前端开发规范v1.0",
             collapsable: false,
@@ -35,5 +38,6 @@ module.exports = {
                 ['myWork', '我的作品']
             ]
         }]
+        
     }
 };

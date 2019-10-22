@@ -1,5 +1,6 @@
-# 哈哈哈
+# CSS
 ## CSS命名规范
+
 > 类名组成
 
 类名或者ID，一般组成为`[类型]-[命名空间]_[实例名]`<br>
@@ -110,22 +111,88 @@
     <div class="u-catBowl">碗</div>
 </div>
 <style type="text/css">
-    .M-earth{ margin: 20px auto; background-color: #71c7f8; width:300px; height: 300px; border-radius: 300px; }
-    .m-cat {position: relative; display: inline-block;}
-    .m-cat > .p-face {width: 80px; height: 90px; border-radius: 100px; background-color: #ccc; }
-    .m-cat > .p-ear {width: 0; height: 0; border-left: 10px solid transparent; border-right: 10px solid transparent; border-bottom: 20px solid #ccc; position: absolute; top: 0; }
-    .m-cat > .p-ear.s-left { left: 0;transform:rotate(-35deg)}
-    .m-cat > .p-ear.s-right { right: 0;transform:rotate(35deg)}
-    .m-cat.s-yellow > .p-face{ background-color:#EFF071;}
-    .m-cat.s-yellow > .p-ear{ border-bottom-color:#EFF071; }
-    .m-cat.z-stop{ animation: none; }
-    .u-catBowl { width: 40px; height: 40px; border-radius: 20px; background-color: #000; display: inline-block;color: #fff; line-height: 40px; text-align: center; }
-    .m-fish{   width: 0; height: 0; border-top: 10px solid transparent; border-right: 20px solid #fff; border-bottom: 10px solid transparent; position:absolute; bottom: 20px; left: 30px;}
-    .m-fish > .p-eye{ position: absolute; width:3px; height: 3px;border-radius: 3px;background-color: #000; left: 10px; top: -2px; }
-    .a-jump{animation: jump 0.75s linear infinite alternate;}
-     @-webkit-keyframes jump {
-    0% {transform:translateY(-5px);}
-    100% {transform:translateY(5px);}
+    .M-earth {
+        margin: 20px auto;
+        background-color: #71c7f8;
+        width: 300px;
+        height: 300px;
+        border-radius: 300px;
+    }
+    .m-cat {
+        position: relative;
+        display: inline-block;
+    }
+    .m-cat>.p-face {
+        width: 80px;
+        height: 90px;
+        border-radius: 100px;
+        background-color: #ccc;
+    }
+    .m-cat>.p-ear {
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 20px solid #ccc;
+        position: absolute;
+        top: 0;
+    }
+    .m-cat>.p-ear.s-left {
+        left: 0;
+        transform: rotate(-35deg)
+    }
+    .m-cat>.p-ear.s-right {
+        right: 0;
+        transform: rotate(35deg)
+    }
+    .m-cat.s-yellow>.p-face {
+        background-color: #EFF071;
+    }
+    .m-cat.s-yellow>.p-ear {
+        border-bottom-color: #EFF071;
+    }
+    .m-cat.z-stop {
+        animation: none;
+    }
+    .u-catBowl {
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+        background-color: #000;
+        display: inline-block;
+        color: #fff;
+        line-height: 40px;
+        text-align: center;
+    }
+    .m-fish {
+        width: 0;
+        height: 0;
+        border-top: 10px solid transparent;
+        border-right: 20px solid #fff;
+        border-bottom: 10px solid transparent;
+        position: absolute;
+        bottom: 20px;
+        left: 30px;
+    }
+    .m-fish>.p-eye {
+        position: absolute;
+        width: 3px;
+        height: 3px;
+        border-radius: 3px;
+        background-color: #000;
+        left: 10px;
+        top: -2px;
+    }
+    .a-jump {
+        animation: jump 0.75s linear infinite alternate;
+    }
+    @-webkit-keyframes jump {
+        0% {
+            transform: translateY(-5px);
+        }
+        100% {
+            transform: translateY(5px);
+        }
     }
 </style>
 ```
