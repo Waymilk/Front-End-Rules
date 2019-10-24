@@ -13,31 +13,46 @@ module.exports = {
         sidebarDepth: 2, // e'b将同时提取markdown中h2 和 h3 标题，显示在侧边栏上。
         lastUpdated: 'Last Updated', // 文档更新时间：每个文件git最后提交的时间
         nav: [
-            { text: '我的野蛮', link: '/base/' }, // 内部链接 以docs为根目录
-            { text: '博客', link: 'http://obkoro1.com/' }, // 外部链接
-            // 下拉列表
             {
-                text: 'GitHub',
-                items: [
-                    { text: 'GitHub地址', link: 'https://github.com/OBKoro1' },
-                    {
-                        text: '算法仓库',
-                        link: 'https://github.com/OBKoro1/Brush_algorithm'
-                    }
-                ]
+              text: '前端规范',
+              items: [
+                  { text: 'HTML规范', link: '/html/整体结构' },
+                  { text: 'CSS规范', link: 'css/命名规范' },
+                  { text: 'JS规范', link: '/javascript/命名规范' }
+              ]
             }
         ],
-        markdown: { // 为每个代码块显示行号
-            lineNumbers: false
-        },
-        sidebar: [{
-            title: "前端开发规范v1.0",
-            collapsable: false,
+        sidebar: [
+          {
+            title: "HTML规范",
+            collapsable: true,
             children: [
-                ['base', '我的小基础页面'],
-                ['myWork', '我的作品']
+                ['html/整体结构', '整体结构'],
+                ['html/代码格式', '代码格式'],
+                ['html/内容语义', '内容语义']
             ]
-        }]
-        
-    }
+        },
+        {
+          title: "CSS规范",
+          collapsable: true,
+          children: [
+              ['css/命名规范', '命名规范'],
+              ['css/书写规范', '书写规范']
+          ]
+        },
+        {
+          title: "Javascript规范",
+          collapsable: true,
+          children: [
+              ['javascript/命名规范', '命名规范'],
+              ['javascript/注释规范', '注释规范'],
+              ['javascript/开发规范', '开发规范'],
+              ['javascript/关于代码', '关于代码']
+          ]
+        }
+      ]
+    },
+    markdown: { // 为每个代码块显示行号
+      lineNumbers: false
+  },
 };
